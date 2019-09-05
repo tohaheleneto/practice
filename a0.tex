@@ -3,12 +3,20 @@
 \usepackage[utf8]{inputenc}
 \usepackage[russian]{babel}
 \usepackage{multicol}
+\usepackage{titlesec}
+\parindent=1cm
+
 \begin{document}
 
 \thispagestyle{fancy}
 \fancyhead[L]{\tiny ISSN 1063-7729, Astronomy Reports, 2015, Vol. 59, No. 1, pp. 72–87. \copyright Pleiades Publishing, Ltd., 2015.\\
 Original Russian Text \copyright A.A. Zlenko, 2015, published in Astronomicheskii Zhurnal, 2015, Vol. 92, No. 1, pp. 80–96.\newline \newline}
 \renewcommand{\headrulewidth}{1pt}
+
+\fancyfoot[L] {*E-mail: zalaf121@mail.ru}
+\renewcommand{\footrulewidth}{0.4pt}
+
+
 \makeatletter
 \def\headrule{{\if@fancyplain\let\headrulewidth\plainheadrulewidth\fi
 \hrule\@height\headrulewidth\@width\headwidth
@@ -33,11 +41,13 @@ translational–rotational tidal evolution of the Earth and Moon in the gravitat
 system has been numerically integrated several billion years into the past and into the future. The results
 are compared with the predictions of other theories, paleontological data, and astronomical observations.
 \end{center}
-\begin{center}
-DOI: 10.1134/S1063772915010096
-\end{center}
+
+\textbf{DOI}:10.1134/S1063772915010096
+
 \begin{multicols}{2}
-\paragraph{1. INTRODUCTION}
+\begin{center}
+ 1. INTRODUCTION
+\end{center}
 The theory of tides originated with work by Newton
 and Laplace. The main achievements in this
 area were collected, systematized, and analyzed by
@@ -101,4 +111,97 @@ and averaging in systems with an infinite number
 of degrees of freedom, aimed at studying the
 motions of deformable bodies using a classical linear
 \end{multicols}
+
+\pagebreak
+
+\begin{multicols}{2}
+elasticity theory for small deformations and a Kelvin–
+Voigt model for the viscous forces. This method
+was used to investigate the evolution of the orbital
+and rotational motions of a viscoelastic planet in a
+central Newtonian force field [19, 20]. The model for a
+celestial body of Markov and Minyaev [21] includes
+an isotropic, viscoelastic layer and a rigid core. A
+qualitative analysis of the motion of the moons of
+Mars is given, and the model parameters were refined
+based on the observations of the secular acceleration
+of Phobos. Vil’ke and Shatina [22] studied the tidal
+evolution of the motion of the Earth–Moon system in
+the gravitational field of the Sun, treating the Moon
+as a point mass.
+Let us now turn to our model describing a double
+planet [23–25].
+\begin{center}
+ 2. MATHEMATICAL MODEL
+FOR THE MOTION OF TWO VISCOELASTIC
+SPHERES IN THE GRAVITATIONAL FIELD
+OF A FIXED CENTRAL BODY
+\end{center}
+2.1. Formulation of the Problem\\
+In the unperturbed motion, the barycenter C of the
+two uniform rigid spheres $O_{1}$  and $O_{2}$ with masses m1
+and m2 moves in a circular, Keplerian orbit in a fixed
+plane in the gravitational field of a stationary massive
+point mass M. The spheres $O_{1}$ and $O_{2}$, in turn,
+move in circular Keplerian orbits about the barycenter
+C in the plane of its motion. The spheres rotate
+with specified constant angular speeds about axes
+passing through their centers of mass perpendicular
+to the plane of their orbital motion. All four motions
+are independent of each other. This formulation of
+the problem is possible because we have made the
+assumptions
+
+$m2 \ll m1 \ll M; r_{i0} \ll  R_{2} \ll R_{1}, (1) $
+
+where $r_{i0}$ (i = 1, 2) are the radii of the spheres, $R_{1}$
+is the distance from the gravitating center to the
+barycenter, and $R_{2}$ is the distance between the centers
+of mass of $O_{1}$ and $O_{2}$ (we will further identify
+the names of the spheres with their centers of mass).
+These assumptions are satisfied, for example, by the
+Sun–Earth–Moon system.\\
+In the perturbed motion, we treat the spheres as
+uniform, isotropic, viscoelastic bodies. Perturbations
+arise due to the deformation of the bodies in response
+to the centrifugal and gravitational forces. Since we
+are studying evolutionary motions, we assume that
+the centers of mass of the spheres move along quasicircular
+orbits.\\
+To describe the motion, we specify an inertial
+coordinate frame OXY Z fixed to the gravitating
+center O, with the spheres moving in the OXY
+plane. We specify Koenig coordinate systems ${O_i}{X_i}{Y_i}$
+with the points ${O_i}$ (i = 1, 2). The position of the barycenter C in the OXY Z system is specified by
+the vector ${R_1} = \vec{OC} ({R_1} \cos {\lambda_1}, {R_1} \sin {\lambda_1}$, 0), where
+$|{R_1}| = {R_1}$, and ${\lambda_1}$ is the angle between ${R_1}$ and the
+OX axis. The position of ${O_2}$ relative to ${O_1}$ in the
+${O_1}{X_1}{Y_1}{Z_1}$ frame is specified by the vector ${R_2} = {O_1}{O_2}({R_2} \cos {\lambda_2}, {R_2} \sin {\lambda_2}, 0)$, where 
+$|{R_2}| = {R_2}$,  and
+${\lambda_2}$ is the angle between ${R_2}$ and the $O{X_1}$ axis. The
+deformed state of the bodies is described by the classical
+theory of elasticity for small deformations. We
+adopted a Kelvin–Voigt model for the viscous forces,
+with the dissipation function ${D_i}[{\dot{u}_i}]$ proportional to
+the elastic-force function ${W_i}[{\dot{u}_i}]$, with the coefficient
+of proportionality ${X_i}$ (the viscosity coefficient):
+${D_i}[{\dot{u}_i}] = {X_i}{W_i}[{\dot{u}_i}$], (2)
+where ${u_i}({r_i}, t)$ is the shift in the points of the body ${O_i}$
+due to the deformations, ${\dot{u}_i} = d{u_i}/dt$ (here and below,
+a dot above a quantity denotes a time derivative), and
+${r_i}$ is the radius vector of the points in a sphere relative
+to the center ${O_i}$ in the undeformed state.
+//
+The rotating spheres are associated with their own
+coordinate systems ${O_i}{X_{ii}}{Y_{ii}}{Z_{ii}}$, where the ${O_i}{Z_{ii}}$ axis
+is perpendicular to the orbital plane (the ${O_i}{Z_i}$ and
+${O_i}{Z_{ii}}$ axes coincide). The positions of the points in
+the viscoelastic sphere ${O_i}$ in the OXY Z coordinate
+system are determined by the vector field
+
+\end{multicols}
+
+\thispagestyle{fancy}
+\fancyhead[L]{TIDAL EVOLUTION OF THE EARTH–MOON SYSTEM}
+
 \end{document}
