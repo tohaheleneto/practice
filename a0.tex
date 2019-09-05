@@ -4,6 +4,7 @@
 \usepackage[russian]{babel}
 \usepackage{multicol}
 \usepackage{titlesec}
+\usepackage{amsmath}
 \parindent=1cm
 
 \begin{document}
@@ -198,7 +199,40 @@ is perpendicular to the orbital plane (the ${O_i}{Z_i}$ and
 ${O_i}{Z_{ii}}$ axes coincide). The positions of the points in
 the viscoelastic sphere ${O_i}$ in the OXY Z coordinate
 system are determined by the vector field
+${\zeta_i}({r_i},t) = \vec{O{O_i}} + {\Gamma_i}({\varphi_i})({r_i}+{u_i}({r_i},t))$,
+where
+$ {\Gamma_i}({\varphi_i}(t)) =
+ \begin{pmatrix} 
+\cos{\varphi_i} & -\sin{\varphi_i}  & 0\\
+\sin{\varphi_i} & \cos {\varphi_i} & 0\\
+0 & 0 & 1
+\end{pmatrix}
+.(4)$
+Here,${\Gamma_i}$ is the orthogonal operator for the translation
+from the Koenig coordinates ${O_i}{X_i}{Y_i}{Z_i}$ to the
+coordinates ${O_i}{X_{ii}}{Y_{ii}}{Z_{ii}}$ and ${\varphi_i}$ is the rotation of the
+${O_i}{X_{ii}}{Y_{ii}}{Z_{ii}}$ system about the ${O_i}{Z_{ii}}$ axis (${\varphi_i}$ is the
+angle between the ${O_i}{X_i}$ and ${O_i}{X_{ii}}$ axes).
+In order to uniquely determine the positions of the
+centers of mass of the spheres ${O_i}$ in the ${O_i}{X_{ii}}{Y_{ii}}{Z_{ii}}$
+coordinate systems as the spheres move by ${\zeta_i}({r_i}, t)$,
+we imposed the following conditions (relations) on
+this motion:
+$$\int_{v_i} {u_i}d{v_i}$$ = 0,
+$$\int_{v_i} curl{u_i}d{v_i}$$ = 0
 
+$(d{v_i} = d{x_{ii}}d{y_{ii}}d{z_{ii}})$,
+where ${V_i} = \{|{r_i}| < {r_{i0}} \}$ is the region occupied by Oi
+in the undeformed state.
+\end{multicols}
+
+\pagebreak
+\begin{multicols}{2}
+The functional for the kinetic energy of the system
+has the form
+$T = \frac{1}{2}m{R^2_1} + \frac{m1m2}{2m}{R^2_2} + \frac{1}{2}\sum_{i=1}^{2}{J_i}[{u_i}]{\dot{\varphi}_i}^2 + 2{G_i}{\dot{\varphi}_i}+{T_{0i}})$,
+where
+${J_i}[{u_i}] $= $$\int_{v_i} [{e_3}\times ({r_i} + {u_i})]^2 {\rho_i}d{v_i}$$
 \end{multicols}
 
 \thispagestyle{fancy}
