@@ -1,18 +1,30 @@
-\documentclass[12pt]{article}
+\documentclass[fontsize = 11pt,a4paper]{article}
 \usepackage{fancybox,fancyhdr} 
 \usepackage[utf8]{inputenc}
 \usepackage[russian]{babel}
 \usepackage{multicol}
 \usepackage{titlesec}
 \usepackage{amsmath}
-\parindent=1cm
+\usepackage{indentfirst}
 
+
+
+
+\setlength\parindent{12pt}
+\usepackage[left=2cm,right=2cm,
+    top=2cm,bottom=2cm]{geometry}
+\title{\textbf{A Celestial-Mechanical Model for the Tidal Evolution\\
+of the Earth-Moon System Treated as a Double Planet}}
+\author{\textbf{A. A. Zlenko*}}
+\date{\emph{Moscow Automobile and Roadway State Technical University, Moscow, Russia}\\
+Received May 6, 2014; in final form, May 21, 2014}
 \begin{document}
+\maketitle
 
 \thispagestyle{fancy}
-\fancyhead[L]{\tiny ISSN 1063-7729, Astronomy Reports, 2015, Vol. 59, No. 1, pp. 72–87. \copyright Pleiades Publishing, Ltd., 2015.\\
-Original Russian Text \copyright A.A. Zlenko, 2015, published in Astronomicheskii Zhurnal, 2015, Vol. 92, No. 1, pp. 80–96.\newline \newline}
-\renewcommand{\headrulewidth}{1pt}
+\fancyhead[L]{\tiny \emph{ISSN 1063-7729, Astronomy Reports, 2015, Vol. 59, No. 1, pp. 72–87. \copyright Pleiades Publishing, Ltd., 2015.\\
+Original Russian Text \copyright A.A. Zlenko, 2015, published in Astronomicheskii Zhurnal, 2015, Vol. 92, No. 1, pp. 80–96.\newline \newline}}
+
 
 \fancyfoot[L] {*E-mail: zalaf121@mail.ru}
 \renewcommand{\footrulewidth}{0.4pt}
@@ -27,13 +39,9 @@ Original Russian Text \copyright A.A. Zlenko, 2015, published in Astronomicheski
 \vskip-1.5pt}}
 \makeatother
 
-\textbf{A Celestial-Mechanical Model for the Tidal Evolution
-of the Earth–Moon System Treated as a Double Planet}
-\begin{center}
-\textbf{A. A. Zlenko*}
-\end{center}
-\begin{center}
-Abstract—A celestial-mechanical model for the motion of two viscoelastic spheres in the gravitational
+
+\indent\vbox{
+\noindent\textbf{Abstract}—A celestial-mechanical model for the motion of two viscoelastic spheres in the gravitational
 field of a massive point is considered, treating them as a double planet. The spheres move along quasicircular
 orbits in a single plane, with their rotational axes perpendicular to this plane. The deformation of
 the spheres is described using the classical theory of small deformations. A Kelvin–Voigt model is adopted
@@ -41,15 +49,15 @@ for the viscous forces. A system of evoutionary equations is obtained and applie
 translational–rotational tidal evolution of the Earth and Moon in the gravitational field of the Sun. This
 system has been numerically integrated several billion years into the past and into the future. The results
 are compared with the predictions of other theories, paleontological data, and astronomical observations.
-\end{center}
-
+\\
+\\
 \textbf{DOI}:10.1134/S1063772915010096
-
+}
 \begin{multicols}{2}
-\begin{center}
- 1. INTRODUCTION
-\end{center}
-The theory of tides originated with work by Newton
+
+ \centerline{ 1. INTRODUCTION}
+~\\
+\indent The theory of tides originated with work by Newton
 and Laplace. The main achievements in this
 area were collected, systematized, and analyzed by
 Darwin [1], and further developed by MacDonald [2],
@@ -59,8 +67,8 @@ without including the influence of the Sun. Goldreich
 oblateness of the Earth and the influence of solar
 tides, but neglecting the ellipticity of the lunar orbit,
 and correctly averaged the equations of motion using
-three time scales.
-The method of MacDonald was then used in various
+three time scales.\\
+\indent The method of MacDonald was then used in various
 other studies. Beletskii [4] investigated the tidal
 evolution of the inclinations and rotations of celestial
 bodies. Webb [5] studied the evolution of the
@@ -73,12 +81,11 @@ various models for tidal phenomena in detail.
 It was shown that the evolution of the Earth–Moon
 system based on the models of Darwin–Mignard and
 Darwin–Cowley–Goldreich is essentially equivalent
-to that predicted by the model of Goldreich.
-Efroimsky and Lainey [8] considered the effective
+to that predicted by the model of Goldreich.\\
+\indent Efroimsky and Lainey [8] considered the effective
 dissipation function Q, which is proportional to the
-tidal frequency to the power $\alpha$ . They studied the tidal
-evolution of the Martian moon Phobos for $\alpha$ = 0.2,
-0.3, 0.4. Note that $\alpha$ = 0 in the model of MacDonald
+tidal frequency to the power $\alpha$. They studied the tidal
+evolution of the Martian moon Phobos for $\alpha$ = 0.2, 0.3, 0.4. Note that $\alpha = 0$ in the model of MacDonald
 and $\alpha$ = -1 in the model of Mignard [9, 10]. The
 main distinguishing property of the approach proposed
 by Ferraz-Mello et al. [11] is that, in contrast to
@@ -93,8 +100,8 @@ connections with rheological models, are considered
 by Efroimsky and Williams [12] and Efroimsky and
 Makarov [13]. Note that the qualitative conclusions
 derived for the simpler MacDonald theory essentially
-remain correct [12].
-The subsequent development of tidal theories is
+remain correct [12].\\
+\indent The subsequent development of tidal theories is
 concerned with the creation of rheological models.
 Churkin [14–16] established a generalized theory of
 the Love number and applied it to the rheological
@@ -133,12 +140,12 @@ as a point mass.
 Let us now turn to our model describing a double
 planet [23–25].
 \begin{center}
- 2. MATHEMATICAL MODEL
-FOR THE MOTION OF TWO VISCOELASTIC
-SPHERES IN THE GRAVITATIONAL FIELD
+ 2. MATHEMATICAL MODEL\\
+FOR THE MOTION OF TWO VISCOELASTIC\\
+SPHERES IN THE GRAVITATIONAL FIELD\\
 OF A FIXED CENTRAL BODY
 \end{center}
-2.1. Formulation of the Problem\\
+ \centerline{\emph{2.1. Formulation of the Problem}}
 In the unperturbed motion, the barycenter C of the
 two uniform rigid spheres $O_{1}$  and $O_{2}$ with masses m1
 and m2 moves in a circular, Keplerian orbit in a fixed
@@ -153,8 +160,7 @@ are independent of each other. This formulation of
 the problem is possible because we have made the
 assumptions
 
-$m2 \ll m1 \ll M; r_{i0} \ll  R_{2} \ll R_{1}, (1) $
-
+$m2 \ll m1 \ll M; r_{i0} \ll  R_{2} \ll R_{1}, $ \hfill(1)\\
 where $r_{i0}$ (i = 1, 2) are the radii of the spheres, $R_{1}$
 is the distance from the gravitating center to the
 barycenter, and $R_{2}$ is the distance between the centers
@@ -192,8 +198,8 @@ due to the deformations, ${\dot{u}_i} = d{u_i}/dt$ (here and below,
 a dot above a quantity denotes a time derivative), and
 ${r_i}$ is the radius vector of the points in a sphere relative
 to the center ${O_i}$ in the undeformed state.
-//
-The rotating spheres are associated with their own
+\\
+\indent The rotating spheres are associated with their own
 coordinate systems ${O_i}{X_{ii}}{Y_{ii}}{Z_{ii}}$, where the ${O_i}{Z_{ii}}$ axis
 is perpendicular to the orbital plane (the ${O_i}{Z_i}$ and
 ${O_i}{Z_{ii}}$ axes coincide). The positions of the points in
@@ -217,12 +223,13 @@ In order to uniquely determine the positions of the
 centers of mass of the spheres ${O_i}$ in the ${O_i}{X_{ii}}{Y_{ii}}{Z_{ii}}$
 coordinate systems as the spheres move by ${\zeta_i}({r_i}, t)$,
 we imposed the following conditions (relations) on
-this motion:
-$$\int_{v_i} {u_i}d{v_i}$$ = 0,
-$$\int_{v_i} curl{u_i}d{v_i}$$ = 0
+this motion:\\
+\indent
+$\int\limits_{V_i} {u_i}d{v_i} = 0,$
+$\int\limits_{V_i} curl{u_i}d{v_i} = 0$
 
 $(d{v_i} = d{x_{ii}}d{y_{ii}}d{z_{ii}})$,
-where ${V_i} = \{|{r_i}| < {r_{i0}} \}$ is the region occupied by Oi
+\\ where ${V_i} = \{|{r_i}| < {r_{i0}} \}$ is the region occupied by Oi
 in the undeformed state.
 \end{multicols}
 
@@ -230,9 +237,190 @@ in the undeformed state.
 \begin{multicols}{2}
 The functional for the kinetic energy of the system
 has the form
-$T = \frac{1}{2}m{R^2_1} + \frac{m1m2}{2m}{R^2_2} + \frac{1}{2}\sum_{i=1}^{2}{J_i}[{u_i}]{\dot{\varphi}_i}^2 + 2{G_i}{\dot{\varphi}_i}+{T_{0i}})$,
-where
-${J_i}[{u_i}] $= $$\int_{v_i} [{e_3}\times ({r_i} + {u_i})]^2 {\rho_i}d{v_i}$$
+$T = \frac{1}{2}m{\dot{R}^2_1} + \frac{m1m2}{2m}{\dot{R}^2_2} + \frac{1}{2}\sum_{i=1}^{2}{J_i}[{u_i}]{\dot{\varphi}_i}^2 + 2{G_i}{\dot{\varphi}_i}+{T_{0i}})$,
+\\ where 
+${J_i}[{u_i}] $= $\int\limits_{V_i} [{e_3}\times ({r_i} + {u_i})]^2 {\rho_i}d{v_i}$,
+${G_i} = \int\limits_{V_i}[{e_3} \times ({r_i} + {u_i}),\dot{{u_i}}]{\rho_i}d{v_i}, $
+${T_{0i}} = \int\limits_{V_i} (\dot{{u_i}}^2) {\rho_i} d {v_i},$
+${e_3}$ is the unit vector for the $O_i Z_{ii}$ axis perpendicular
+to the OXY plane, and ${\rho_i}$ is the density of the sphere
+$O_i$.\\
+The potential energy associated with the gravitational interactions is given by\\
+$\Pi=\Pi_1 + \Pi_2 + \Pi_3$, \\
+where $\Pi_1 = -f \int\limits_{V_i} \{(R_1 - m_2/m)R_2$ \\
+$+\Gamma_1 (r_1 + u_1)]^2\}^{-1/2}\rho_1 d v_1$\\
+is the energy associated with the interaction between
+the gravitating center and the viscoelatic body $O_1$,
+$\Pi_2 = -f \int\limits_{V_2} \{(R_1 + m_1/m)R_2$ \\
+$+\Gamma_2 (r_2 + u_2)]^2\}^{-1/2}\rho_2 d v_2$\\
+is the energy associated with the interaction between
+the gravitating center and the viscoelatic body $O_2$,
+$\Pi_3 = -f  \int\limits_{V_i}\int\limits_{V_2} \{(R_2 +\Gamma_2(r_2 + u_2)$ \\
+$-\Gamma_1 (r_1 + u_1)]^2\}^{1/2}\rho_1\rho_2 d v_1d v_2$\\
+is the energy associated with the deformable spheres
+$O_1$ and $O_2$, f = GM, G is the gravitational constant,
+and $m = m_1 + m_2$. Taking into account the condition
+(1) and neglecting terms of order $(R_2/R_1)^3(m_2/m)^3$
+and higher order in smallness in the potential energy,
+and leaving only terms that are linear $u_i$, we obtain
+$\Pi = fm/R_1 - G{m_1}{m_2}/R_2 + {\Pi _\rho}$ (8)\\
+$\Pi_\rho = \sum\limits_{k=1}^{2} \sum\limits_{i=1}^{2} f_{ki}/ {R_k}^3\int\limits_{V_i}[{r_i}{u_i}$ (9) \\
+$-3(\xi_{ki},r_i)(\xi_{ki},u_i)]\rho_idv_i$,\\
+$f_{1i} = f$,   $f_{2i} = Gm_{3-i}$, \\
+$\xi_{ki} = \tau_{ki}[\cos(\lambda_k - \phi_i),\sin(\lambda_k - \phi_i),0],$\\
+$\tau_{21} = -1,$   $\tau_{ki} = 1$   $(k \neq 2, i \neq 1).$ \\
+Following [22], we introduced canonical Poincar$\dot{e}$
+variables $\lambda_k, \Lambda_k$ (k = 1, 2 to describe the motion of
+the barycenter and centers of mass $O_i$:
+$\Lambda_1 = m (fR_1)^{1/2}$,   $\Lambda_2 = m_r (f_0R_2)^{1/2}$ , (10)\\
+where $m_r = m_1m_2/m, f_0 = Gm.$\\
+To describe the rotational motion of the bodies, we\\
+used the Andoyer canonical variables $\varphi_i, I_i $  (i = 1, 2):\\
+$I_i = J_i[u_i]\dot{\varphi_i} + G_i$,    (11)\\
+where $J_i[u_i]$ and $G_i$ is defined in (6). \\
+The equation of motion was written in the form of
+the Routh equations \\
+$\dot{\Lambda_k} = -  \frac{\partial\Re }{\partial{\lambda_k}},$
+$\dot{\lambda_k} = \frac{\partial\Re }{\partial{\Lambda_k}},$
+$\dot{I_i} = -  \frac{\partial\Re }{\partial{\varphi_i}},$ (12) \\
+
+$\dot{\varphi_i} = -  \frac{\partial\Re }{\partial{I_i}},$
+$\frac{d}{dt} {\nabla_{\dot{u_i}}}\Re - {\nabla_{u_i}}\Re - {\nabla_{\dot{u_i}}}D_i = 0.$
+Here, $\Re$ is the Routh function, which has the form\\
+$\Re = - \frac{{f^2}{m^3}}{2{\Lambda_1}^2} - \frac{{f_0}^2{m_r}^3}{2{\Lambda_2}^2}$ \hfill (13)\\
+$+  \sum\limits_{i=1}^{2} \{ \frac{{I_i}^2}{2A_i} -\frac{{I_i}^2}{2{A_i}^2}J_{i1}[u_i] $\\
+$- \frac{I_i}{A_i}( e_3, \int\limits_{V_i} (r \times \dot{u_i}) dv) + W_i[u_i]\} + {\Pi_\rho}$\\
+where $A_i$ = 0.4${m_i}{r^2_{i0}}$ is the moment of inertia of the
+undeformed sphere $O_i$,\\
+$J_{i1}[u_i] = 2  \int\limits_{V_i}[(r_i, u_i) - (e_3, r_i)(e_3, u_i)]\rho_idv_i,$(14)\\ 
+and an expression for $\Pi_\rho$ is give by (9). \\
+\indent The equations of motion admit the integral of the
+angularmomentum. When the Routh function (13) is
+written out in detail, it can be shown that the angular
+variables $\lambda_k$ and $\varphi_i$ appear in this function in the
+combination $\psi_{ki} = \lambda_k - \varphi_i$. It follows that \\
+$\dot{I}_i = - \frac{\partial\Re}{\partial\varphi_i} = - \sum\limits_{k=1}^{2}\frac{\partial\Re}{\partial\psi_{ki}}\cdot
+\frac{\partial\psi_{ki}}{\partial{\varphi_i}} = \sum\limits_{k=1}^{2} \frac{\partial\Re}{\partial\psi_{ki}}$, \hfill (15)\\
+$\dot{\Lambda_k} = -  \frac{\partial\Re }{\partial{\lambda_k}} = - \sum\limits_{i=1}^{2} \frac{\partial\Re}{\partial\psi_{ki}} 
+\cdot \frac{\partial\psi_{ki}}{\partial{\Lambda_k}} = - \sum\limits_{i=1}^{2}\frac{\partial\Re}{\partial\psi_{ki}},$\\
+$\dot{I_1} + \dot{I_2} + \dot{\Lambda_1} + \dot{\Lambda_2}$\\
+$ = \sum\limits_{i=1}^{2} \sum\limits_{k=1}^{2} \frac{\partial\Re}{\partial\psi_{ki}} -  \sum\limits_{k=1}^{2} \sum\limits_{i=1}^{2}
+ \frac{\partial\Re}{\partial\psi_{ki}} = 0,$ \\
+${I_1} + {I_2} + {\Lambda_1} + t{\Lambda_2} = K_0 = const.$\\
+ \centerline{\emph{2.2.Finding the Displacements of Points\\
+in the Bodies due to their Deformation}}
+\indent The system (12) cannot be integrated in explicit
+form, since this is a quite complex system of differential
+equations. Therefore, we applied the method
+for separating motions in systems with an infinite
+number of degrees of freedom [18]. Since we assumed
+the rigidity of the elastic spheres $O_i$ were high, we
+introduced the small parameters $\varepsilon_i$, proportional to
+the ratio of the squares of the angular velocity of
+rotation of a sphere at the initial time and of the lowest
+frequency for the intrinsic elastic vibrations of the
+sphere. The displacements $u_i$ are small, and can be
+represented as a series in powers of $\varepsilon_i$:\\
+$u_i(r_i,t) = \varepsilon_i u_{i1}(r_i,t) +  \varepsilon_i^2 u_{i2}(r_i,t) + ...,$\hfill (16) \\
+$\varepsilon_i = \rho_i r^2_{i0} \varphi^2_i(0) / E_i,$ \hfill (17) \\
+where $E_i$ is the Young’s modulus for the body $O_i$.\\
+If $\varepsilon_i  = 0$, then $u_i(r_i, t) = 0$, and the equations of
+the unperturbed motion follow from (12):\\
+$\dot{\Lambda_1} = \dot{\Lambda_2} = \dot{I_1} = \dot{I_2} = 0,$\\
+$\dot{\lambda_1} = \omega_1$,   $\dot{\lambda_2} = \omega_2$  $\dot{\varphi_1} = \omega_3$  $\dot{\varphi_2} = \omega_4$\\
+where \\
+$\omega_1 = \frac{f^2m^3}{\Lambda^3_1}$,    $\omega_2 = \frac{f^2_0 m^3_r}{\Lambda^3_2}$ \hfill (19)\\
+$\omega_3 = \frac{I_1}{A_1}$,  $\omega_4 = \frac{I_2}{A_2}$.\\
+In this case, the center of mass of the two bodies C
+moves along a circular orbit about the fixed center
+O with a constant angular velocity $\omega_1$, the bodies
+$O_i$ move along circular orbits about their center of
+mass C with a constant angular velocity $\omega_2$, and the
+bodies $O_1$ and $O_2$ rotate on their axes with constant
+angular velocities $\omega_3$ and $\omega_4$, normal to their orbital
+plane passing through their centers of mass. \\
+\indent It can be shown that, after the intrinsic vibrations
+of the viscoelastic spheres have died away, including
+only the first term $\varepsilon_i u_{i1}$ in the expansion of $u_i(r_i, t)$ in
+powers of $\varepsilon_i$ in (16), the last equations in (12) reduce
+to the two relations\\
+$\nabla_{u_i}W_i[\varepsilon_i u_{i1} + \chi_i \varepsilon_i \dot{u_{i1}}]$
+$ = \rho_i \{ \omega^2_{2+i} [ r_i - (e_3,r_i)e_3]$\\
+$+  \sum\limits_{k=1}^{2} (f_{ki} / R^3_k)[3(\xi_{ki},r_i) \xi_{ki} - r_i] \}$ (i = 1, 2),\\
+where\\
+$\nabla_{u}W_i[\varepsilon_i u] = \frac{\rho_ir^2_{i0}\dot{\varphi^2_i}(0)}{2(1 + v_i)}$\hfill (21)\\
+$ \times (\frac{1}{1 - 2v_i}\nabla div u + \Delta u),$ \\
+and $v_i$ is the Poisson coefficient for the matter in the
+sphere $O_i$.\\
+Equation (20) can be written in the form\\
+${\varepsilon_i} \nabla_{u_i} W_i [u_{i1} + \chi_i \dot u_{i1}]$ \hfill (22) \\
+$=\rho_i [\omega^2_{2+i}(2r_i/3 + B_o r_i) +  \sum\limits_{k=1}^{2} 3 (f_{ki}/R^3_k)B_{ki} r_{i}],$\\
+where\\
+$B_0 = 
+\begin{pmatrix} 
+1/3 & 0 &  0 \\
+0 & 1/3 & 0 \\
+0 & 0 & -2/3
+\end{pmatrix}, $
+\\
+$B_{ki} = \frac{1}{6}
+\begin{pmatrix} 
+3cos 2 \psi_{ki} + 1  & 3 sin 2 \psi_{ki} &  0 \\
+3 sin 2 \psi_{ki} & -3cos 2 \psi_{ki} + 1 & 0 \\
+0 & 0 & -2
+\end{pmatrix}.$\\
+All the quantities in the right-hand side of (22) are
+calculated for the unperturbed motion.\\
+Taking into account the fact that the stresses on
+the surfaces of the deformable bodies $O_i$ are zero (i.e.,
+the boundary conditions for the functions $u_{i1}(r_i, t)$
+have the form $\sigma_{in} = 0$), with accuracy to within firstorder
+terms in the small quantity $\chi_i$, the solution of
+(22) has the form\\
+$u_i(r_i,t) \approx \varepsilon_i u_{i1} = u_{i11} + u_{i12} + u_{i13},$ \hfill (23) \\
+$u_{i11} = \rho_i / E_i \omega^2_{2 + i} [-2/3(d_{i1} r^2_i + d_{i2} r^2_{i0})$\\
+$+ a_{i1}(B_0 r_i, r_i) + (a_{i1} r^2_i + a_{i2} r^2_{i0})B_0]r_i,$\\
+$u_{i12} = 3 \rho_i / E_i \sum\limits_{k=1}^{2} f_{ki} R^{-3}_k [a_{i1}(B_{ki}r_i,r_i)r_i$\\
+$ + (a_{i2}r^2_i + a_{i3} r^2_{i0}) B_{ki}r_i],$\\
+$u_{i13} = -3 \rho_i / E_i \sum\limits_{k=1}^{2} f_{ki} R^{-3}_k \chi_i (\omega_k - \omega_{2+i})$\\
+$\times [a_{i1}(\frac{\partial B_{ki}}{\partial \psi_{ki}} r_i, r_i)r_i + (a_{i2}r^2_i +  a_{i3} r^2_{i0}) \frac{\partial B_{ki}}{\partial \psi_{ki}} r_i ], $\\
+where\\
+$d_{i1} = \frac{(1 + v_i)(1 - 2v_i)}{10(1 - v_i)},$\\
+$d_{i2} =- \frac{(3 - v_i)(1 - 2v_i)}{10(1 - v_i)},$\\
+$a_{i1} =- \frac{1+ v_i}{5 v_i + 7},$   $a_{i2} =- \frac{(1+ v_i)(2 + v_i)}{5 v_i + 7}. $\\
+The structure of $u_i(r_i, t)$ is such that the first term
+$u_{i11}$ describes axially symmetrical, elastic deformation
+of the sphere $O_i$, which is compressed by the
+action of the centrifugal force associated with the
+rotation about the $O_iZ_{ii}$ axis passing through the
+center of mass. The second term $u_{i12}$ characterizes
+the deformation of the body $O_i$ due to the external
+gravitational fields of the two other bodies. These
+fields also give rise to gravitational tides, given by the
+third term $u_{i13}$, which contains the viscosity coefficient
+$\chi_i$ and influences the evolution of the motion.
+
+\centerline{\emph{2.3. Simplification and Averaging\\
+of the Equations of Motion}}
+Let us write the canonical equations (12) in more
+detail, taking into account the Routh function and the
+displacements $u_i(r_i, t) \approx \varepsilon u_{i1}:$\\
+$\dot\Lambda_k = 3  \sum\limits_{i=1}^{2} \rho_i f_{ki} R^{-3}_k$ \hfill (24) \\
+$ \times \int\limits_{V_i}[(\frac{\partial{\xi_{ki}}}{\partial{\lambda_k}},ri)(\xi_{ki} \varepsilon_i u_{i1})$\\
+$+ (\xi_{ki}, r_i) (\frac{\partial{\xi_{ki}}}{\partial{\lambda_k}}, \varepsilon_i u_{i1})] dv_i,$\\
+$\dot\lambda_k  = \omega_k - 3 \sum\limits_{i=1}^{2} \rho_i f_{ki} R^{-4}_k \partial R_k / \partial \Lambda _k$ \hfill (25)\\
+$ \times  \int\limits_{V_i} [ r_i \varepsilon_i u_{i1}) - 3(\xi_{ki}, r_i)(\xi_{ki},\varepsilon_i u_{i1})] d v_i,$ \\
+$\dot I_i = 3 \rho_i \sum\limits_{k=1}^{2}  f_{ki} R^{-3}_k $ \hfill (26) \\
+$ \times  \int\limits_{V_i} [(\frac{\partial{\xi_{ki}}}{\partial{\varphi_i}}, r_i)(\xi_{ki}, \varepsilon_i u_{i1})$ \\
+$ + ( \xi_{ki}, r_i) (\frac{\partial{\xi_{ki}}}{\partial{\varphi_i}},  \varepsilon_i u_{i1})]  d v_i,$ \\
+$\dot \varphi_i = \omega_{2 + i} - 2 {\rho_i} \frac{\omega_{2 + i}}{A_i}$ \hfill (27) \\
+$\times \int\limits_{V_i}[ (r_i,  \varepsilon_i u_{i1}) - (e_3,r_i)(e_3, \varepsilon_i u_{i1})] d v_i$ \\
+$- \frac{\rho_i}{A_i}[e_3,\int\limits_{V_i}(r \times \varepsilon_i  \dot u_{i1})d v_i].$\\
+Subsituting the resulting variables (23) into the
+equations of motion (24)–(27) and calculating the
+necessary cumbersome integrals yields the system of
+equations of motion\\
+$\dot\Lambda_k  = -18 \sum\limits_{k=1}^{2} \rho ^2_i / E_i D_{i2} m_{3-i} \omega^2_k / m$ \hfill (28) \\
 \end{multicols}
 
 \thispagestyle{fancy}
