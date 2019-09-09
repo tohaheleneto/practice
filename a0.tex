@@ -6,7 +6,8 @@
 \usepackage{titlesec}
 \usepackage{amsmath}
 \usepackage{indentfirst}
-
+\usepackage{graphicx}
+\usepackage{subcaption}
 
 
 
@@ -420,9 +421,257 @@ Subsituting the resulting variables (23) into the
 equations of motion (24)–(27) and calculating the
 necessary cumbersome integrals yields the system of
 equations of motion\\
-$\dot\Lambda_k  = -18 \sum\limits_{k=1}^{2} \rho ^2_i / E_i D_{i2} m_{3-i} \omega^2_k / m$ \hfill (28) \\
+$\dot\Lambda_k  = -18 \sum\limits_{i=1}^{2} \rho ^2_i / E_i D_{i2} m_{3-i} \omega^2_k / m$ \hfill (28) \\
+$\times \{ \chi_i {(m_{3-i}/m)}^{2k-3} \omega^2_k(\omega_k - \omega_{2+i})$\\
+$+ \omega^2_{3-k}[(-1)^{2-k}0.5 \sin \tau + \chi_i ( \omega_{3-k} -  \omega_{2+i}) \cos \tau] \},$\\
+$\dot I_i = 18 \rho^2_i / E_i D_{i2} \chi_i[ {\omega^4}_1(\omega_1 - \omega_{2 + i})$ \hfill (29) \\
+$+ {(m_{3-i} / m) }^2 {\omega^4}_2(\omega_2 - \omega_{2 + i})$\\
+$+ m_{3 - i} / m \omega^2_1 \omega^2_2 (\omega_1 + \omega_2 - 2 \omega_{2+i} \cos \tau],$ \\
+$\dot\Lambda_k = \omega_k + 6 \sum\limits_{i=1}^{2} \rho ^2_i / E_i D_{i2}{( m_{3-i} / m)} ^ {k-1}$ \hfill (30)\\
+$\times \Lambda_k ^ {-1} \omega_k ^2 \{ \omega_{2+i}^2 + 6 {( m_{3-i} / m)}^{k-1} \omega_{k}^2$\\
+$+ 3 {(m_{3-i}/ m)} ^{2-k} \omega_{3-k}^2[0.5 + 1.5 \cos \tau$\\
+$+ 3 {(-1)}^{k-1} \chi_i ( \omega_{3-k} - \omega_{2 + i}) \sin \tau ] \},$\\
+$\dot \varphi_i = \omega_{2 + i} - 2 \rho_i ^2 / E_i {A_i} ^{-1} \omega_{2 + i} [ D_{i2}(\omega^2_1$ \hfill (31) \\
+$+ m_{3-i}/m\omega^2_2) + 2/3(2 D_{i1} + D_{i2}) \omega ^2 _{2 + i}],$\\
+where\\
+$D_{i1} = \frac{8\pi r^7_{i0}(1-2v_i)(4-3v_i)}{525(1-v_i)},$\\
+$D_{i2} = \frac{4\pi r^7_{i0}(1+v_i)(9v_i+13)}{105(5v_i+7)},$\\
+$\tau = 2 (\lambda_2 - \lambda_1).$
+The right-hand sides of these equations do not
+depend on $\varphi_i$. Since the equations (31) depend only
+on $\lambda_k$ and $I_i$, they can be separated from the remaining
+equations and integrated after the integration of\\
+(28)-(30). If $\omega_1$ = $\omega_2$, the angular variable $\tau$ is a rapid
+variable, and averaging Eqs. (28)-(30) over$\tau$ yields
+the evolutionary system of equations \\
+$\dot\Lambda_k  = -18 \omega_k^4 \sum\limits_{i=1}^{2} \chi_i \rho_i^2 / E_i$ \hfill (32) \\
+$\times D_{i2}{(m_{3-i}/m)}^{2k-2} (\omega_k - \omega_{2+i}),$\\
+$\dot{I_i} = 18 \chi_i \rho_i^2 / E_i D_{i2}[\omega^4_1(\omega_1 - \omega_{2+i}) $\hfill (33) \\
+$+ {(m_{3-i}/m)}^{2} \omega^4_2 (\omega_2 - \omega_{2+i})],$\\
+$\dot\lambda_k = \omega_k + 6 \Lambda_k^{-1} \omega_k ^2$ \hfill (34) \\
+$\times \sum\limits_{i=1}^{2} \rho_i^2 /  E_i D_{i2} {( \frac{m_{3-i}}{m})}^{k-1}$\\
+$\times [ \omega^2_{2+i} + {(m_{3-i} / m)}^{k-1} \omega^2_k$\\
+$+1.5 {(m_{3-i} / m)}^{2-k}\omega^2_{3-k}].$\\
+The right-hand sides of the averaged equations do
+not depend on $\lambda_k$, and Eq. (34) can be separated
+from (32)-(33) and integrated after the solution of the
+independent system (32)-(33).\\
+Since\\
+$\Lambda_1 = {(f^2m^3\omega^{-1}_1)}^{1/3},$\\
+$\Lambda_2 = {(G^2{m_1}^3 {m_2}^3 m^{-1} \omega^{-1}_2)}^{1/3},$\\
+$\omega_3 = I_1 / A_1, \omega_4 = I_2/A_2,$\\
+the system (32)-(33) can be written in the more
+“intuitive” variables $\omega_j$ (j = 1-4):\\
+$\dot \omega_1 = c_1 \omega^{16/3}_1 [k_1(\omega_1 - \omega_3) + k_2 ( \omega_1 - \omega_4)],$ \hfill (35)\\
+$\dot \omega_2 = c_2 \omega^{16/3}_2 [k_1{(m_2 / m)}^2 (\omega_2 - \omega_3)$\\
+$ + k_2 {(m_1 / m)}^2 ( \omega_2 - \omega_4)],$\\
+$\dot \omega_3 = c_3 k_1 [ \omega^{4}_1 (\omega_1 - \omega_3) +  {(m_2 / m)}^2 (\omega_2^4) (\omega_2 - \omega_3)],$\\
+$\dot \omega_4 = c_4 k_2 [ \omega^{4}_1 (\omega_1 - \omega_4) +  {(m_1 / m)}^2 (\omega_2^4) (\omega_2 - \omega_4)],$\\
+where
+$k_i = \chi_i \rho_i^2 / E_i D_{i2}, c_1=54f^{-2/3}m^{-1},$\hfill (36)\\
+$c_2 = 54G^{-2/3} m^{1/3} m^{-1}_1 m^{-1}_2,$ \\
+$c_3 = 18A^{-1}_1, c_4 = 18A^{-1}_2$\\
+The system (35) has the first integral\\
+$3c^{-1}_1 {\omega_1}^{-1/3} + 3c^{-1}_2 {\omega_2}^{-1/3}$ \hfill (37) \\
+$+ {c_3}^{-1} \omega_3 +  {c_4}^{-1} \omega_4 = K_0.$\\
+Thus, we obtained the independent system of firstorder
+ordinary differential equations (35) to investigate
+the evolution of the slow variables: the angular
+velocity of the orbital motion of the center of mass
+of the binary planet (two viscoelastic bodies) about
+the gravitating center $\omega_1$, the angular velocity of the
+planets about their common center of mass  $\omega_2$, and
+the angular rotational velocities of the two bodies
+$\omega_3$ and $\omega_4$. The right-hand sides of these equations
+all contain the viscosity coefficient $\chi_i$ through the
+coefficients ki. If $\chi_i$ is zero, there is no tidal evolution
+of the system.
+\begin{center}
+ 3. NUMERICAL INTEGRATION\\
+OF THE EQUATIONS OF MOTION
+\end{center}
+ \centerline{\emph{3.1. Input Data}}
+The system (35) was numerically integrated using
+theMATLAB R2013a programme package. We took
+the Sun to be the fixed gravitating center, the first
+body to be the Earth, and the second body to be the
+Moon. We took the following data from [26] for the
+current epoch:\\
+\indent -G = 6.67428 $ \times {10}^{11} {m}^3 {kg}^{-1} {s}^{-2}$ is the gravitational
+constant,\\
+\indent -f = $GM_S = 1.32712442099 \times 10^{20} m^3/ s ^2$ is
+the heliocentric gravitatonal constant,\\
+\indent -$GM_E = 3.986004418 \times 10^{14} m^3 / s^2$ is the geocentric
+gravitational constant,\\
+\indent $-M_M / M_E = 1.23000371 \times 10^{-2}$ is the ratio of
+the masses of theMoon $M_M$ and the Earth $M_E.$\\
+We also took the following quantities at the current
+epoch from [27]:\\
+\indent-the duration of a single orbit of the \hfill (38)\\
+Earth-Moon system around the Sun, equal 
+to a sidereal year, $T_1$ = 365.25636296 d,\\
+\indent-the duration $T_2$ of a single orbit of theMoon
+about the Earth, equal to a sidereal month and
+also equal to the rotational period of the Moon
+$T_4$; i.e., $T_2 = T_4$ = 27.3216616 d,\\
+\indent-the duration of an Earth day $T_3$= 86 400 s,\\
+\indent-the radius of the Moon $r_20$ = 1737.4 km\\
+\indent-the radius of the Earth $r_10$ = 6371.032 km.
+We used the units of measurement
+\indent-for mass the solar mass M = $M_S$ = 1, \hfill (39) \\
+\indent-for length L = ${10}^8$ m,\\
+\indent-for time T = 31 558 149.759744 s, equal to
+one year.\\
+In these new units\\
+G = f = 1.321705528131173 $\times {10}^{11}$, \hfill (40)\\
+$m_1$ = $M_E$ = 3.003489616313853 $ \times 10^{-6}$,\\
+$m_2$ =$ M_M$ = 3.694303371012516$ \times 10^{-8}$,\\
+m = 3.040432650023978  $\times  10^{6}$,\\
+$A_1$ = 4.876471597254109  $\times  10^{9}$,\\
+$A_2$ = 4.460588721066945 $\times 10^{12}$,\\
+where $A_i$ are the moments of inertia (13).\\
+We find from (36) the values\\
+$c_1$ = 6.844923013835195 $\times {10}^{-1}$, \hfill (41) \\
+$c_2$ = 2.717213270640726 $\times {10}^{5}$,\\
+$c_3$ = 3.691193446125189 $\times {10}^{9}$,\\
+$c_4$ = 4.035341773382441 $\times {10}^{12}$.\\
+The initial values for $\omega_i$ were taken to be $\omega_i$ (0) =
+$2\pi/T_i$ (i = 1-4), where we took $T_i$ from (38). It
+follows [in the new units (39)]:\\
+$\omega_1 (0) = \omega_{10} = 6.283185307179586,$ \hfill  (42)\\
+$\omega_2 (0) = \omega_{20} = \omega_4 (0) = \omega_{40} = 83.99831045063988,$\\
+$\omega_3 (0) = \omega_{30} = 2.294973413104126 \times 10^3.$\\
+\indent We found $k_1$ from the second equation of (35)
+under the condition that the radius of the lunar orbit
+$R_2$ is increasing at the rate $\Delta R_{20}$ = 0.038 m/yr at the
+current epoch [28]:\\
+$d \omega_{20} = c_2 k _1 {\omega_{20}}^{16/3} {(m_2/m)}^2 (\omega_{20} - \omega_{30}) dt.$\\
+Assuming a time interval dt = 1(in years) yields:\\
+$k _1 = d \omega_{20}/ [c_2 {\omega_{20}}^{16/3} {(m_2/m)}^2 (\omega_{20} - \omega_{30})]. $ \hfill (43) \\
+Since $R_2 = \sqrt[3]{Gm\omega^{-2}_2}$, it follows that $dR_2$ = \\
+$- frac{2}{3}  \sqrt[3]{Gm\omega^{-5}_2}d \omega_2$. Since the time interval dt = 1 is
+very small on evolutionary scales, we have to a high
+degree of accuracy d$R_20 = \Delta R_20$. Therefore, \\
+$d \omega_{20}  = -1.5  \sqrt[3]{G^{-1} m^{-1} \omega^{5}_{20}} \Delta R_{20}.$ \hfill (44) \\
+Substituting (44) into (43) yields\\
+$k1 = - \frac{1}{36}  \sqrt[3]{G m^4 \omega^{-11}_{20} m_1 m^{-1}_2}$\hfill (45) \\
+$\times  \Delta R_{20} / (\omega_{20} - \omega_{30})$\\
+Calculations using (45) together with the data from
+(40) and (42) give\\
+$k_1 = 7.661095722418093 \times {10}^{-24}.$ \hfill (46) \\
+We assumed in these calculations $ \Delta R_{20} =0.038 L^{-1},$
+where L is defined in (39).\\
+\indent We found $k_2$ from the condition that $d\omega_2/dt$ =
+$d\omega_4$/dt at the current epoch, since the orbital angular
+velocity of the Moon around the Earth is currently
+equal to the angular velocity of the Moon about its
+center of mass, and their two rates of variation are so
+close that we can take them to be equal. We find from
+the second and fourth equations of (35) \\
+$c_2 k_1 \omega^{16/3}_{20} {(m_2/m)}^2 (\omega_{20} - \omega_{30})$ \hfill (47) \\
+=$c_4 k_2 \omega^{4}_{10} (\omega_{10} - \omega_{40}).$\\
+Equation (47) together with the expressions (36) for
+$c_2$ and $c_4$ yield\\
+$k_2 = 3 k_1 A_2 (m_2/m_1)$ \hfill (48)\\
+$\times  \sqrt[3]{G^{-2} m^{-5} \omega^{16}_{20}}  (\omega_{20} - \omega_{30}) / ( \omega^4_{10}  (\omega_{10} - \omega_{40})).$\\
+Substituting all the required quantities from (40),
+(42), and (46) into (48) yields\\
+$k_2 = 2.546031240069387 \times 10^{-26}.$ \hfill (49)\\
+The value of the integral of the angular momentum
+$K_0$ (37) with the coefficients $c_i$ (41) and the input
+data (42) is equal to (in the new units)\\
+$K_0 = 42.75292278673111.$  \hfill (50)
+\indent The adequateness of the derived coefficients, in
+particular $k_1$, and of our model at the current epoch
+can be tested by finding the slowing of the Earth’s
+rotation $\Delta T_{30}$. The third equation of (35) yields\\
+$d \omega_{30} = c_3 k_1 [ \omega^4_{10} (\omega_{10} - \omega_{30})$ \hfill (51)\\
+$+ {(m_2/m)}^2 \omega^4_{20} (\omega_{20} - \omega_{30})]dt.$\\
+Setting dt = 1 in (51) with the data (40)-(42) and
+(46) yields\\
+$d \omega_{30} = -5.604049652131884 \times {10}^{-7}.$ \hfill (52)\\
+However, $T3 = 2 \pi / \omega_3$. Thus \\
+$dT_{30} = - 2 \pi d \omega_{30} / \omega^2_{30}T(s)$  \hfill (53)\\
+Substituting the value of $d\omega_{30}$ from (52) and T from
+(39) into (53), we find dT30 = $\Delta T_{30} \approx $ 0.002 s/100 yr,
+in good consistency with astronomical observations
+[29].\\
+ \centerline{\emph{3.2. Results of Numerical Integration and Analysis}}
+1. Integration into the Past We integrated the system
+(35) with the input data (42) and the coefficients
+from (40), (41), (46), and (49) over time into the past
+from zero to -5 billion years using the ode45 software,
+designed to solve non-rigid systems of differential
+equations, with a relative error RelTol =$ {10}^{-13}$
+and an absolute error AbsTol = ${10}^{-15}$ (these errors
+did not change in the subsequent computations into
+the past and future). The following values of the angular
+variables were obtained for t = -5 billion years:\\
+$\omega_1 =6.283149581125962,$ \hfill (54)\\
+$\omega_2 =3.704491483803059,$ \\
+$\omega_3 =2.862809504155766 \times {10}^3,$\\
+$\omega_4 =-3.740751844225381 \times {10}^7,$\\
+The integral of the angular momentum was equal to
+$K_0 $= 42.75292278673117.\\
 \end{multicols}
 
+\begin{figure}[h!]
+  \begin{subfigure}[t]{0.4\linewidth}
+    \includegraphics[width=\linewidth]{graph1.png}
+  \end{subfigure}
+  \begin{subfigure}[t]{0.4\linewidth}
+    \includegraphics[width=\linewidth]{graph3.png}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.4\linewidth}
+    \includegraphics[width=\linewidth]{graph2.png}
+  \end{subfigure}
+ \begin{subfigure}[b]{0.4\linewidth}
+\hbox{\hspace{+9em}
+    \includegraphics[width=\linewidth]{graph4.png}
+}
+  \end{subfigure}
+\end{figure}
+
+\begin{multicols}{2}
+We can see that this differs from the value of K0 at
+t = 0 given by (50) by $6 \times {10}^{-14}.$ \\
+\indent As a test of the computations, the system (35) with
+the input data (54) was integrated from -5 billion
+years to zero. This yielded the following values at
+t = 0 after this reverse computation:
+$\omega_1 = 6.283185307179550,$\\
+$\omega_2 = 8.399831045067062 \times 10^1,$\\
+$\omega_3 = 2.294973413103788 \times 10^3,$\\
+$\omega_4 = 8.399831045066902 \times 10^1.$\\
+These differ from the original input data (42) in the
+digits indicated in bold. The computation from zero
+to -5 billion years occupied less than a minute on the
+Samsung NP510R5E laptop computer used.
+\indent Plots of the angular velocities for integration into
+the past in the time interval from 0 to -4.5 billion
+years are presented in Figs. 1-9. The horizontal
+axes plot the time and the vertical axes the angular
+variabiles (in the new units).
+The orbital angular velocity of the Moon slowly
+increases in the time interval from -4.5 billion
+years to -100 million years (Fig. 1). It begins
+\end{multicols}
+\pagebreak
+
+\begin{figure}[h!]
+  \begin{subfigure}[t]{0.4\linewidth}
+    \includegraphics[width=\linewidth]{graph5.png}
+  \end{subfigure}
+  \begin{subfigure}[t]{0.4\linewidth}
+\hbox{\hspace{+9em}
+    \includegraphics[width=\linewidth]{graph6.png}
+}
+  \end{subfigure}
+\end{figure}
+
+\begin{multicols}{2}
+
+\end{multicols}
 \thispagestyle{fancy}
 \fancyhead[L]{TIDAL EVOLUTION OF THE EARTH–MOON SYSTEM}
 
